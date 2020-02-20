@@ -1,0 +1,9 @@
+﻿@model int
+<div class="col-lg-2">
+    @for(var item = 0; item < Model; item++)
+    {
+        <div class="sidebar__item">
+            <input name="In[@item]" type="text" class="sidebar__item_in" />
+        </div>
+    }
+</div>

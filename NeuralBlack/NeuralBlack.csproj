@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E408B75B-802B-42F9-8B7D-A0C1E43AD73A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NeuralBlack</RootNamespace>
+    <AssemblyName>NeuralBlack</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NeuronApp\Neural.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronApp\NeuralNetworkLearning.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\ActivationFunction.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\ErrorViewModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\GetSmartNeuralNetwork.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\LearningModule.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\NeuronNetwork.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\NeuronValidation.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\TeachModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Interface\INeural.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Interface\INeuralNetworkFromDb.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="Interface\INeuralNetworkLearning.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+    <Compile Include="NeuronModel\BaseNeuralModel.cs" Condition=" '$(EnableDefaultCompileItems)' == 'true' " />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NeuronApp\" />
+    <Folder Include="NeuronModel\" />
+    <Folder Include="Interface\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

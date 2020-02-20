@@ -1,0 +1,6 @@
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/bin/Debug/NeuralLibrary.dll
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/bin/Debug/NeuralLibrary.pdb
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/obj/Debug/NeuralLibrary.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/obj/Debug/NeuralLibrary.dll
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/obj/Debug/NeuralLibrary.pdb
+/Users/macbook/Projects/NeuralNetwork/NeuralLibrary/obj/Debug/NeuralLibrary.csprojAssemblyReference.cache

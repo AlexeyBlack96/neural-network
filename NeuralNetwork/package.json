@@ -1,0 +1,38 @@
+{
+  "name": "helloapp",
+  "version": "1.0.0",
+  "description": "First Angular 5 Project",
+  "author": "metanit.com",
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@angular/common": "~6.0.0",
+    "@angular/compiler": "~6.0.0",
+    "@angular/core": "~6.0.0",
+    "@angular/forms": "~6.0.0",
+    "@angular/platform-browser": "~6.0.0",
+    "@angular/platform-browser-dynamic": "~6.0.0",
+    "@angular/router": "~6.0.0",
+    "core-js": "2.5.7",
+    "d3": "^5.7.0",
+    "rxjs": "6.2.0",
+    "zone.js": "0.8.26"
+  },
+  "devDependencies": {
+    "@types/d3": "^5.0.1",
+    "@types/node": "^10.1.4",
+    "@types/webpack-env": "^1.13.6",
+    "angular2-template-loader": "^0.6.2",
+    "aspnet-prerendering": "^3.0.1",
+    "aspnet-webpack": "^2.0.3",
+    "awesome-typescript-loader": "^5.0.0",
+    "html-loader": "^0.5.1",
+    "raw-loader": "^0.5.1",
+    "typescript": "^2.8.3",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.2",
+    "webpack-hot-middleware": "^2.22.1"
+  }
+}

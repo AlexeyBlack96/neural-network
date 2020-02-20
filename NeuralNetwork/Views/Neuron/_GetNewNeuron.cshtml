@@ -1,0 +1,12 @@
+﻿@model Neuron.Models.NeuronNetwork
+@foreach (var item in Model.Errors)
+{
+    <p></p><br />
+    @foreach (var jitem in item.ErrorsInOne)
+    {
+        <p>@jitem</p>
+    }
+    <br />
+    <br />
+    <br />
+}

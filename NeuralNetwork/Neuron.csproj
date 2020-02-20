@@ -1,0 +1,62 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <CustomCommands>
+      <CustomCommands>
+        <Command>
+          <type>BeforeBuild</type>
+          <command></command>
+        </Command>
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App">
+      <PrivateAssets Condition="'%(PackageReference.Version)' == ''">all</PrivateAssets>
+      <Publish Condition="'%(PackageReference.Version)' == ''">true</Publish>
+    </PackageReference>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\app\" />
+    <Folder Include="Views\Neuron\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\iris.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="package.json">
+      <IncludeInPackage>false</IncludeInPackage>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="public\app.js" />
+    <None Remove="src\d3\d3.service.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\NeuronForView.css" />
+    <Compile Remove="NeuronModel\ActivationFunction.cs" />
+    <Compile Remove="Interface\INeural.cs" />
+    <Compile Remove="Interface\INeuralNetworkFromDb.cs" />
+    <Compile Remove="Interface\INeuralNetworkLearning.cs" />
+    <Compile Remove="NeuronApp\Neural.cs" />
+    <Compile Remove="NeuronApp\NeuralNetworkLearning.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\iris.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NeuralBlack">
+      <HintPath>..\NeuralBlack\bin\Debug\NeuralBlack.dll</HintPath>
+    </Reference>
+    <Reference Include="NeuralLibrary">
+      <HintPath>..\NeuralLibrary\bin\Debug\NeuralLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

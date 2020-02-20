@@ -1,0 +1,36 @@
+﻿@model int
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts
+    {
+
+    <script src="~/js/jquery.autoresize.js"></script>
+    <script src="~/js/jquery-touch_punch.js"></script>
+    <script src="~/js/jquery.contextmenu.js"></script>
+    <script src="~/js/rgbcolor.js"></script>
+    <script src="~/js/canvg.js"></script>
+    <script src="~/js/Class.js"></script>
+    <script src="~/js/json2.js"></script>
+    <script src="~/js/pathfinding-browser.min.js"></script>
+    <script src="~/js/draw2d.js"></script>
+
+
+
+}
+
+
+
+<div>
+    <canvas id="Errors" class="chartjs-render-monitor"></canvas>
+</div>
+<button id="Reteach">Reteach</button>
+<script>
+
+</script>
+<div onselectstart="javascript:/*IE8 hack*/return false" id="gfx_holder" style="width:1500px; height:1500px; ">
+</div>

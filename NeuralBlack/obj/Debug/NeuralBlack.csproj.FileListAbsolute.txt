@@ -1,0 +1,5 @@
+/Users/macbook/Projects/NeuralNetwork/NeuralBlack/bin/Debug/NeuralBlack.dll
+/Users/macbook/Projects/NeuralNetwork/NeuralBlack/bin/Debug/NeuralBlack.pdb
+/Users/macbook/Projects/NeuralNetwork/NeuralBlack/obj/Debug/NeuralBlack.csproj.CoreCompileInputs.cache
+/Users/macbook/Projects/NeuralNetwork/NeuralBlack/obj/Debug/NeuralBlack.dll
+/Users/macbook/Projects/NeuralNetwork/NeuralBlack/obj/Debug/NeuralBlack.pdb
